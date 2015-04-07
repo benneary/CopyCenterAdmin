@@ -2,108 +2,279 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DonorFlow Stats Dashboard</title>
-  <link href="main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Copy Center Admin</title>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Compiled and minified CSS -->
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
 </head>
   <body>
-  <div class="col-xs-12" style="height: 20px; float: left;"></div>
-<div class="col-lg-3 col-lg-offset-2">
-  <h1>Dashboard</h1>
-  <br/>
-  <h5>Dashboard Load</h5> 
-  <h1>6.6 <small>Seconds</small></h1>
+   <nav class="teal darken-1">
+  <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="mdi-action-search nav-icons"></i></a></li>
+        <li><a href="#"><i class="mdi-action-account-circle nav-icons active"></i></a></li>
+        <li><a href="#"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
+        
+  </ul>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="#!">Job List</a></li>
+    <li><a href="#!">Reports</a></li>
+    <li><a href="#!">Utilities</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i  style="color: 263238;" class="mdi-navigation-menu"> </i></a>
+  <div style="font-size: 1.3rem; font-weight: 300;">&nbsp; Copy Center</div>
+</nav>
 
-  <br>
+<div class="row">
+<div class="col s10" style="padding: 1.3em 1.8em;">
+  <h5 style="margin-top: 0;"><strong>Active Jobs</strong></h5>
+    <table class="responsive-table hoverable">
+        <thead style="color: rgb(89, 89, 89); font-size: 0.87em;">
+          <tr>
+              <th>Number</th>
+              <th>Job Name</th>
+              <th>Customer</th>
+              <th>Due Date</th>
+              <th>Charge Number</th>
+              <th>Total</th>
+              <th>Action</th>
+          </tr>
+        </thead>
 
-  <h5>Current Suscriptions</h5> 
-  <h1>260</h1>
+        <tbody style="color: rgb(29, 29, 29); font-size: 0.95em;">
+          <tr>
+            <td>34685</td>
+            <td class="heavy">EV0006 Cuts Exposed</td>
+            <td class="heavy">Christine Tinker</td>
+            <td>03/05/2015</td>
+            <td>10708</td>
+            <td class="heavy">$76.54</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34686</td>
+            <td class="heavy">Doctrine of The Holy</td>
+            <td class="heavy">Christine Tinker</td>
+            <td>03/07/2015</td>
+            <td>10709</td>
+            <td class="heavy">$200.86</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+                    <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+                    <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
+          <tr>
+            <td>34687</td>
+            <td class="heavy">TH00016 First Steps</td>
+            <td class="heavy">Justin Fisk</td>
+            <td>03/08/2015</td>
+            <td>10710</td>
+            <td class="heavy">$68.14</td>
+            <td>
+              <i class="fa fa-times"></i> &nbsp;
+              <i class="fa fa-edit"></i> 
+            </td>
+          </tr>
 
-  <br>
 
-  <h5>Created Subscriptions</h5> 
-  <h1>500</h1>
-
-  <br>
-
-  <h5>Suscription Drops</h5> 
-  <h1>100</h1>
-
-  <br>
-
-  <h5>Suscribes</h5> 
-  <h1>100</h1>
-
-  <br>
-
-  <h5>Hub Broadcasts</h5> 
-  <h1>100</h1>
-  
+        </tbody>
+      </table>
+            
 
 </div>
+<div class="col s2" style="padding-right: 0;">
+  <div class="blue-grey lighten-5" style="height: 100%;">
+    <div class="sidebar-header">
+     Job Overview
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-title">JOB NAME</div>
+      <div class="sidebar-job">Doctrine of The Holy</div>
+    
+    <div style="width: 100%; float: left; margin-top: 1.5em;">
+      <div style="width: 50%; float: left;">
+        <div class="sidebar-title">CUSTOMER</div>
+        <div class="sidebar-p">Christine Tinker</div>
+      </div>
+      <div style="width: 50%; float: left;">
+        <div class="sidebar-title">CUSTOMER</div>
+        <div class="sidebar-p">Christine Tinker</div>
+      </div>
+    </div>
 
-<div class="col-lg-3 ">
-  <h1>Tx Grid</h1>
-  <br/>
-  <h5>Searches</h5> 
-  <h1>600</h1>
+    <div style="width: 100%; float: left; margin-top: 1.5em;">
+      <div style="width: 50%; float: left;">
+        <div class="sidebar-title">JOB NUMBER</div>
+        <div class="sidebar-p">24866</div>
+      </div>
+      <div style="width: 50%; float: left;">
+        <div class="sidebar-title">CHARGE NUMBER</div>
+        <div class="sidebar-p">10709</div>
+      </div>
+    </div>
 
-  <br>
+    <div style="width: 100%; float: left; margin-top: 1.5em;">
+        <div class="sidebar-title">FILES</div>
+        <div class="sidebar-p">DoctrinesOfHoly.docx &nbsp; <i class="fa fa-download"></i></div>
+      </div>
 
-  <h5>Saved Changes</h5> 
-  <h1>4,000</h1>
+      <div style="width: 100%; float: left; margin-top: 1.5em;">
+        <div class="sidebar-title">ADDITIONAL NOTES</div>
+        <div class="sidebar-i">Integer malesuada enim quis blandit 
+facilisis. Integer vitae sem vitae neque 
+iaculis rhoncus. Proin eget rutrum 
+mauris, vitae consequat nisl. 
+Morbi congue varius purus, quis 
+lobortis leo tincidunt volutpat. 
+Suspendisse sit amet laoreet justo. </div>
+      </div>
+    </div>
 
-  <br>
+    </div>
 
-  <h5>Records Open</h5> 
-  <h1>800</h1>
 
-  <br>
+  </div>
 </div>
-<div class="col-lg-2">
-
-  <h1>DSS</h1>
-  <br>
-
-  <h5>In Memory Calc Time</h5> 
-  <h1>1.4 <small>Seconds</small></h1>
-
-  <br>
-
-  <h5>Initial Load</h5> 
-  <h1>7.3 <small>Seconds</small></h1>
-
-  <br>
-
-  <h5>Hub Broadcasts</h5> 
-  <h1>100</h1>
-  
-
-</div>
-
-<div class="col-lg-3">
-  <h1>Giving App</h1>
-  <br/>
-  <h5>Transactions Submitted</h5> 
-  <h1>2,000</h1>
-
-  <br>
-
-  <h5>Open Forms</h5> 
-  <h1>70</h1>
-
-  <br>
-
-  <h5>Avg. Call Time</h5> 
-  <h1>5.5 <small>Seconds</small></h1>
-  
-
 </div>
 
 
+
+
+<script type="text/javascript">
+    // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+</script>
 
   </body>
 </html>
