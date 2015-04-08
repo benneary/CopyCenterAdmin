@@ -8,6 +8,10 @@
   font-size: 12px;
  }
 
+ .card-title {
+  color: black!important;
+ }
+
 .sidebar-header {
   padding: 1em 1.5em;
   font-size: 1.2em;
@@ -55,6 +59,17 @@
 .nav-icons {
   font-size: 1.5rem;
   color: #263238;
+}
+
+.reports-icon {
+    margin-top: 0.5em;
+  font-size: 1.5rem!important;
+}
+
+.card-action {
+  text-align: right;
+  font-weight: 600;
+  font-size: 1rem!important;
 }
 
 
@@ -6314,7 +6329,7 @@ form p:last-child {
   /* checkbox aspect */ }
   [type="checkbox"] + label {
     position: relative;
-    padding-left: 35px;
+    padding-left: 45px;
     cursor: pointer;
     display: inline-block;
     height: 25px;
