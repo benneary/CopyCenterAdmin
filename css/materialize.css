@@ -12,6 +12,12 @@
   color: black!important;
  }
 
+.table-total {
+  color: black;
+  background-color: #E5E5E5 !important;
+  font-weight: 500;
+}
+
 .sidebar-header {
   padding: 1em 1.5em;
   font-size: 1.2em;
@@ -2282,7 +2288,7 @@ thead {
   border-bottom: 1px solid #d0d0d0; }
 
 td, th {
-  padding: 15px 5px;
+  padding: 15px 15px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
@@ -5785,7 +5791,7 @@ button.btn-floating {
     .dropdown-content li:hover, .dropdown-content li.active {
       background-color: #eee; }
     .dropdown-content li > a, .dropdown-content li > span {
-      font-size: 1.2rem;
+      font-size: 0.95rem;
       color: #26a69a;
       display: block;
       padding: 1rem 1rem; }
@@ -6542,7 +6548,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 .select-wrapper {
   position: relative;
-  margin-top: 15px; }
+  margin-top: 35px; }
   .select-wrapper input.select-dropdown {
     position: relative;
     cursor: pointer;
