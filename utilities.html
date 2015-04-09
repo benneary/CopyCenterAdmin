@@ -15,10 +15,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
 </head>
 <body>
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Sign Out</a></li>
+  <li><a href="#!">Other Stuff</a></li>
+</ul>
  <nav class="teal darken-1">
   <ul class="right hide-on-med-and-down">
     <li><a href="#"><i class="mdi-action-account-circle nav-icons active"></i></a></li>
-    <li><a href="#"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
+    <li><a href="#" class="dropdown-button" data-activates="dropdown1"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
 
   </ul>
   <ul id="slide-out" class="side-nav">
@@ -42,10 +46,10 @@
           <div class="row" style="margin-bottom: 0;">
            <div class="input-field col s12">
             <select>
-              <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+              <option value="" disabled selected>March</option>
+              <option value="1">April</option>
+              <option value="2">May</option>
+              <option value="3">June</option>
             </select>
             <label>Billing For</label>
           </div>
@@ -101,20 +105,21 @@
         <div class="card-content">
           <span class="card-title">Lost & Found</span>
           <h6 style="margin-bottom: 1em;"><strong>Uncharged Jobs From</strong></h6>
-          <div class="row">
-            <div class="input-field col s11">
-              <i class="fa fa-calendar-o prefix reports-icon"></i>
-              <input id="lost-start" type="text" class="validate">
-              <label for="lost-start">Start Date</label>
+            <div class="row">
+              <div class="input-field col s11">
+                <i class="fa fa-calendar-o prefix reports-icon"></i>
+                  <input id="lost-start" type="date" class="datepicker">
+                <label for="lost-start">Start Date</label>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s11">
-              <i class="fa fa-calendar-o prefix reports-icon"></i>
-              <input id="lost-end" type="text" class="validate">
-              <label for="lost-end">End Date</label>
+            <h6 style="margin-bottom: 1em;"><strong>Uncharged Jobs From</strong></h6>
+            <div class="row">
+              <div class="input-field col s11">
+                <i class="fa fa-calendar-o prefix reports-icon"></i>
+                  <input id="lost-end" type="date" class="datepicker">
+                <label for="lost-end">End Date</label>
+              </div>
             </div>
-          </div>
         </div>
         <div class="card-action">
           <a href="#">Submit</a>
@@ -127,6 +132,11 @@
 </div>
 </div>
 <script type="text/javascript">
+$('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+      });
+$(".dropdown-button").dropdown();
     // Initialize collapse button
     $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)

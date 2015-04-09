@@ -15,14 +15,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
 </head>
   <body>
-   <nav class="teal darken-1">
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Sign Out</a></li>
+  <li><a href="#!">Other Stuff</a></li>
+</ul>
+  <nav class="teal darken-1">
   <ul class="right hide-on-med-and-down">
         <li><a href="#"><i class="mdi-action-account-circle nav-icons active"></i></a></li>
-        <li><a href="#"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
+        <li><a href="#" class="dropdown-button" data-activates="dropdown1"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
         
   </ul>
   <ul id="slide-out" class="side-nav">
-        <li><a href="index.html">Job List</a></li>
+    <li><a href="index.html">Job List</a></li>
     <li><a href="reports.html">Reports</a></li>
     <li><a href="utilities.html">Utilities</a></li>
   </ul>
@@ -272,6 +276,7 @@ Suspendisse sit amet laoreet justo. </div>
 
 
 <script type="text/javascript">
+$(".dropdown-button").dropdown();
     // Initialize collapse button
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
