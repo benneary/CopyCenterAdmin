@@ -15,26 +15,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
 </head>
 <body>
+  <div class="navbar-fixed">
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Sign Out</a></li>
-    <li><a href="#!">Other Stuff</a></li>
-  </ul>
+  <li><a href="#!">Sign Out</a></li>
+  <li><a href="#!">Other Stuff</a></li>
+</ul>
   <nav class="teal darken-1">
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#"><i class="mdi-action-account-circle nav-icons active"></i></a></li>
-      <li><a href="#" data-activates="dropdown1" class="dropdown-button"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
+  <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="mdi-action-account-circle nav-icons active"></i></a></li>
+        <li><a href="#" class="dropdown-button" data-activates="dropdown1"><i class="mdi-navigation-more-vert nav-icons"></i></a></li>
+        
+  </ul>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="index.html">Job List</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="utilities.html">Utilities</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i  style="color: 263238;" class="mdi-navigation-menu"> </i></a>
 
-    </ul>
-    <ul id="slide-out" class="side-nav">
-      <li><a href="index.html">Job List</a></li>
-      <li><a href="reports.html">Reports</a></li>
-      <li><a href="utilities.html">Utilities</a></li>
-    </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i  style="color: 263238;" class="mdi-navigation-menu"> </i></a>
+  <div style="font-size: 1.3rem; font-weight: 300;">&nbsp; Copy Center</div>
 
-    <div style="font-size: 1.3rem; font-weight: 300;">&nbsp; Copy Center</div>
+</nav>
 
-  </nav>
+</div>
+
   <div class="container">
 
     <h5 style="margin-top: 1.5em; margin-bottom: 1.5em;"><strong>Reports</strong></h5>
